@@ -28,7 +28,7 @@ def send():
     text = request.args.get('message')
     requests.get(
         f'{api_url}/bot{token}/sendMessage?chat_id={chat_id}&text={text}')
-    return '<h2>메제지 전송 완료<h2>'
+    return '<h2>메세지 전송 완료<h2>'
 
 
 def lotto():
